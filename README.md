@@ -96,6 +96,7 @@ This repo is based on
 - [VideoPose3D](https://github.com/facebookresearch/VideoPose3D)
 - [Attention3DHumanPose](https://github.com/lrxjason/Attention3DHumanPose)
 - [2s-AGCN](https://github.com/lshiwjx/2s-AGCN)
+
 Thanks to the original authors for their work!
 
 ## Contact
