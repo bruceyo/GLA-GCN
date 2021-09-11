@@ -34,9 +34,9 @@ The source code is for training/evaluating on the [Human3.6M](http://vision.imar
 Some of the links above might not work, we provide the following for reproducing the results in our paper:
 * Human3.6M: [CPN 2D](https://drive.google.com/file/d/1ayw5DI-CwD4XGtAu69bmbKVOteDFJhH5/view?usp=sharing), [Ground-truth 2D](https://drive.google.com/file/d/1U0Z85HBXutOXKMNOGks4I1ape8hZsAMl/view?usp=sharing), and [Ground-truth 3D](https://drive.google.com/file/d/13PgVNC-eDkEFoHDHooUGGmlVmOP-ri09/view?usp=sharing).
 * HumanEva-I: [MRCNN 2D](https://drive.google.com/file/d/1IcO6NSp5O8mrjUTXadvfpvrKQRnhra88/view?usp=sharing), [Ground-truth 2D](https://drive.google.com/file/d/1UuW6iTdceNvhjEY2rFF9mzW93Fi1gMtz/view?usp=sharing), and [Ground-truth 3D](https://drive.google.com/file/d/1CtAJR_wTwfh4rEjQKKmABunkyQrvZ6tu/view?usp=sharing).
-Above links are on Google Drive. You can also download all the above files via [BaiduYun]() code:1234.
+Above links are on Google Drive. You can also download all the above files via [BaiduYun](https://pan.baidu.com/s/1onNLKqrAbsc3mKRum5CAwA
+code：1234).
 Please put them in folder `./data` to reproduce the results.
-
 
 ### Evaluating pre-trained models
 #### Human3.6M
@@ -95,12 +95,8 @@ We keep our code consistent with [VideoPose3D](https://github.com/facebookresear
 This repo is based on
 - [VideoPose3D](https://github.com/facebookresearch/VideoPose3D)
 - [Attention3DHumanPose](https://github.com/lrxjason/Attention3DHumanPose)
-
+- [2s-AGCN](https://github.com/lshiwjx/2s-AGCN)
 Thanks to the original authors for their work!
 
 ## Contact
-For any question, feel free to contact
-```
-xxx     : xxx@xxx
-xxx     : xxx@xxx
-```
+For any question, feel free to contact Bruce Yu: ```b r u c e y o 2011 AT gmail.com(remove space)```
