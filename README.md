@@ -5,7 +5,7 @@ This repository holds the codebase, dataset and models for the review purpose of
 In this work, we propose a novel learning architecture called Strided Adaptive Graph Convolutional Network (S-AGCN) that utilizes graph convolutions to estimate the 3D human pose from a monocular video. We explicitly disentangle the structural features in the graph representation and leverage them to the 3D human pose estimation. Our S-AGCN is based on three key model designs that contribute to the performance. First, we adopt the Adaptive Graph Convolutional Network (AGCN) to effectively represent the 2D human pose. Second, we expand the AGCN representation with a strided design, which temporally shrinks the representation size for the 3D pose reconstruction. Third, we propose individually connected layers to reconstruct the 3D human pose from the shrunken AGCN representation. The architecture is straightforward to implement and uses a far smaller number of model parameters than state-of-the-art methods. We conduct extensive experiments on two benchmark datasets: Human3.6M and HumanEva-I to validate our model design. Experimental results show that our S-AGCN implemented with ground-truth 2D poses significantly outperforms state-of-the-art methods (e.g., up to 16% error reduction for the Human3.6M dataset). We also provide qualitative analysis to show the better performance achieved by our method.
 
 <div align="center">
-    <img src="figures/structure.jpg">
+    <img src="figures/architecture.png">
 </div>
 
 ## Visualization and Comparison with SOTA
