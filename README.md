@@ -11,11 +11,7 @@ In this work, we propose a novel learning architecture called Strided Adaptive G
 ## Visualization and Comparison with SOTA
 [![IMAGE ALT TEXT](http://img.youtube.com/vi/eI-8FEiTLdA/0.jpg)](http://www.youtube.com/watch?v=eI-8FEiTLdA "Qualitative Analysis for S-AGCN")
 
-<iframe width="560" height="315"
-src="https://www.youtube.com/embed/MUQfKFzIOeU" 
-frameborder="0" 
-allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-allowfullscreen></iframe>
+[![Everything Is AWESOME](https://drive.google.com/file/d/1-n9eLoNx2AGVNyF6vFNjKQGT7GpHGwhq/view?usp=sharing)](https://youtu.be/eI-8FEiTLdA?t=35s "Everything Is AWESOME")
 
 ### Environment
 
