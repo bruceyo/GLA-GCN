@@ -14,7 +14,7 @@ In this work, we propose a novel learning architecture called Strided Adaptive G
 <iframe width="560" height="315" src="https://www.youtube.com/embed/eI-8FEiTLdA?start=97" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
-[![Everything Is AWESOME](http://img.youtube.com/vi/eI-8FEiTLdA/0.jpg)](https://youtu.be/eI-8FEiTLdA?t=97s "Everything Is AWESOME")
+[![Everything Is AWESOME](//img.youtube.com/vi/eI-8FEiTLdA/0.jpg)](//youtu.be/eI-8FEiTLdA?t=97s "Everything Is AWESOME")
 
 ### Environment
 
