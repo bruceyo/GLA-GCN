@@ -40,7 +40,7 @@ Please put them in folder `./data` to reproduce the results.
 
 ### Evaluating pre-trained models
 #### Human3.6M
-We provide the pre-trained CPN model [here](https://drive.google.com/file/d/1dfmnDyhVC3l2zteigXepU2eXvmBnsBzM/view?usp=sharing) and ground truth model [here](https://drive.google.com/file/d/1Vu2c7fJFHP8v0GjBpJ2JTUPwGV3RlGRC/view?usp=sharing). To evaluate them, put them into the `./checkpoint` directory and run:
+We provide the pre-trained models using CPN and GT 2D data, which can be found in the `./checkpoint` directory. To evaluate, pleasae run:
 
 For cpn model:
 ```bash
