@@ -62,8 +62,8 @@ class Graph:
         if dataset=='h36m':
             num_node = 17
             self_link = [(i, i) for i in range(num_node)]
-            inward_ori_index = [(1,0), (2,1), (3,2), (4,0), (5,4), (6,5), (7,0), (8,7),
-                                (9,8), (10,9), (11,8), (12,11), (13,12), (14,8), (15,14), (16,15)]
+            inward_ori_index = [(2,1), (3,2), (4,3), (5,1), (6,5), (7,6), (8,1), (9,8),
+                                (10,9), (11,10), (12,9), (13,12), (14,13), (15,9), (16,15), (17,16)]
         elif  dataset=='humaneva15':
             num_node = 15
             self_link = [(i, i) for i in range(num_node)]
