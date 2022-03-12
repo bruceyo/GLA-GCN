@@ -10,7 +10,7 @@ In this work, we propose a novel learning architecture called Strided Adaptive G
 
 ## Visualization and Comparison with SOTA
 <div align="center">
-      <a href="https://youtu.be/AGNFxQ5O8xM?t=96s">
+      <a href="https://youtu.be/AGNFxQ5O8xM?t=23s">
      <img
       src="figures/video.png"
       alt="Everything Is AWESOME"
