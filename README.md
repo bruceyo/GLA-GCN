@@ -44,12 +44,12 @@ We provide the pre-trained CPN model [here](https://drive.google.com/file/d/1dfm
 
 For cpn model:
 ```bash
-python run_s-agcn.py -tta -k cpn_ft_h36m_dbb --evaluate cpn_s-agcn.bin
+python run_s-agcn.py -tta -k cpn_ft_h36m_dbb --evaluate 96_cpn_ft_h36m_dbb_243_supervised.bin
 ```
 
 For ground truth model:
 ```bash
-python run_s-agcn.py -tta --evaluate gt_s-agcn.bin
+python run_s-agcn.py -tta --evaluate 96_gt_243_supervised.bin
 ```
 
 #### HumanEva-I
