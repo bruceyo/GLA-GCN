@@ -1,8 +1,10 @@
-# Strided Adaptive Graph Convolutional Network (S-AGCN)
-This repository holds the codebase, dataset and models for the work "**S-AGCN: Strided Adaptive Graph Convolutional Network for 3D Human Pose Estimation from Monocular Video**".
+# Global-local Adaptive Graph Convolutional Network (GLA-GCN)
+This repository holds the codebase, dataset, and models for the work "**GLA-GCN: Global-local Adaptive Graph Convolutional Network for 3D Human Pose Estimation from Monocular Video**".
 
 ## Introduction
-In this work, we propose a novel learning architecture called Strided Adaptive Graph Convolutional Network (S-AGCN) that utilizes graph convolutions to estimate the 3D human pose from a monocular video. We explicitly disentangle the structural features in the graph representation and leverage them to the 3D human pose estimation. Our S-AGCN is based on three key model designs that contribute to the performance. First, we adopt the Adaptive Graph Convolutional Network (AGCN) to effectively represent the 2D human pose. Second, we expand the AGCN representation with a strided design, which temporally shrinks the representation size for the 3D pose reconstruction. Third, we propose individually connected layers to reconstruct the 3D human pose from the shrunken AGCN representation. The architecture is straightforward to implement and uses a far smaller number of model parameters than state-of-the-art methods. We conduct extensive experiments on two benchmark datasets: Human3.6M and HumanEva-I to validate our model design. Experimental results show that our S-AGCN implemented with ground-truth 2D poses significantly outperforms state-of-the-art methods (e.g., up to 16% error reduction for the Human3.6M dataset). We also provide qualitative analysis to show the better performance achieved by our method.
+3D human pose estimation has been researched for decades with promising fruits. 3D human pose lifting is one of the promising research directions toward the task where both estimated pose and ground truth pose data are used for training. Existing pose lifting works mainly focus on improving the performance of estimated pose, but they usually underperform when testing on the ground truth pose data. We observe that the performance of the estimated pose can be easily improved by preparing good quality 2D pose, such as fine-tuning the 2D pose or using advanced 2D pose detectors. As such, we concentrate on improving the 3D human pose lifting via ground truth data for the future improvement of more quality estimated pose data.
+Towards this goal, a simple yet effective model called Global-local Adaptive Graph Convolutional Network (GLA-GCN) is proposed in this work. Our GLA-GCN globally models the spatiotemporal structure via a graph representation and backtraces local joint features for 3D human pose estimation via individually connected layers.
+We conduct extensive experiments on two benchmark datasets: Human3.6M and HumanEva-I, to validate our model design. Experimental results show that our GLA-GCN implemented with ground truth 2D poses significantly outperforms state-of-the-art methods (e.g., up to 3%, 17\%, and 9% error reductions on Human3.6M, HumanEva-I, and MPI-INF-3DHP, respectively). 
 
 <div align="center">
     <img src="figures/architecture.png">
@@ -63,6 +65,13 @@ python run_s-agcn_HE_13.py -da -tta -d 'humaneva15' -k detectron_pt_coco -str 'T
 python run_s-agcn.py -da -tta -d 'humaneva15' -str 'Train/S1,Train/S2,Train/S3' -ste 'Validate/S1,Validate/S2,Validate/S3' -c 'checkpoint/humaneva' -a 'Walk,Jog,Box' -arc '3,3,3' -b 1024 --evaluate 96_gt_27_supervised_epoch_819.bin --by-subject
 ```
 
+#### MPI-INF-3DHP
+We follow the experimental setup in [p-stmo](https://github.com/patrick-swk/p-stmo). To evaluate them, put the checkpioint at [Google Drive](https://drive.google.com/drive/folders/1RFkIpRNR-78hu3lXF_yTxoiM6GVO0Jx9?usp=sharing) into the `./checkpoint` directory and run:
+
+```bash
+CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 python -m torch.distributed.launch --nproc_per_node=8 --master_port=22241     main_sagcn_gpus_individual_fc_3dhp.py  --dataset '3dhp' --root_path data/s-agcn/  --batch_size 1200   --frames 81  --channel 256  --evaluate
+```
+
 ### Training new models
 
 To train a model from scratch, run:
@@ -96,8 +105,23 @@ This repo is based on
 - [VideoPose3D](https://github.com/facebookresearch/VideoPose3D)
 - [Attention3DHumanPose](https://github.com/lrxjason/Attention3DHumanPose)
 - [2s-AGCN](https://github.com/lshiwjx/2s-AGCN)
+- [p-stmo](https://github.com/patrick-swk/p-stmo)
 
 Thanks to the original authors for their work!
+
+## Citation
+If you find this work is helpful, please cite our work:
+```
+@ARTICLE{9782511,
+  author={Yu, Bruce X.B. and Zhi, Zhang and Yongxu, Liu and Sheng-hua, Zhong and Yan, Liu and Chang Wen, Chen},
+  journal={arXiv}, 
+  title={GLA-GCN: Global-local Adaptive Graph Convolutional Network for 3D Human Pose Estimation from Monocular Video}, 
+  year={2023},
+  volume={},
+  number={},
+  pages={1-1},
+  }
+```
 
 ## Contact
 For any question, feel free to contact Bruce Yu: ```b r u c e x b y u AT gmail.com(remove space)```
