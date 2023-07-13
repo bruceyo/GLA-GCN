@@ -3,6 +3,7 @@
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/gla-gcn-global-local-adaptive-graph/3d-human-pose-estimation-on-human36m)](https://paperswithcode.com/sota/3d-human-pose-estimation-on-human36m?p=gla-gcn-global-local-adaptive-graph)
 
 This repository holds the codebase, dataset, and models for the work:
+
 [**GLA-GCN: Global-local Adaptive Graph Convolutional Network for 3D Human Pose Estimation from Monocular Video**](http://arxiv.org/abs/2307.05853)
 
 [Bruce X.B. Yu](https://bruceyo.github.io/)<sup>1</sup>,
@@ -10,7 +11,7 @@ This repository holds the codebase, dataset, and models for the work:
 [Liu Yongxu](https://scholar.google.com.hk/citations?user=QQwy-dkAAAAJ&hl=en&oi=sra)<sup>1</sup>,
 [Sheng-hua Zhong](https://sheng-hua-zhong.weebly.com/)<sup>2</sup>,
 [Yan Liu](https://www4.comp.polyu.edu.hk/~csyliu/)<sup>1</sup>,
-[Chang Wen Chen](https://chenlab.comp.polyu.edu.hk/)<sup>1</sup>\*
+[Chang Wen Chen](https://chenlab.comp.polyu.edu.hk/)<sup>1</sup>
 
 <sup>1</sup>The Hong Kong Polytechnic University, <sup>2</sup>Shen Zhen University.
 
