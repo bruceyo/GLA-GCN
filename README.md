@@ -1,14 +1,27 @@
-# Global-local Adaptive Graph Convolutional Network (GLA-GCN)
-This repository holds the codebase, dataset, and models for the work "**GLA-GCN: Global-local Adaptive Graph Convolutional Network for 3D Human Pose Estimation from Monocular Video**".
+# GLA-GCN
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/gla-gcn-global-local-adaptive-graph/3d-human-pose-estimation-on-mpi-inf-3dhp)](https://paperswithcode.com/sota/3d-human-pose-estimation-on-mpi-inf-3dhp?p=gla-gcn-global-local-adaptive-graph)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/gla-gcn-global-local-adaptive-graph/3d-human-pose-estimation-on-human36m)](https://paperswithcode.com/sota/3d-human-pose-estimation-on-human36m?p=gla-gcn-global-local-adaptive-graph)
+
+This repository holds the codebase, dataset, and models for the work:
+[**GLA-GCN: Global-local Adaptive Graph Convolutional Network for 3D Human Pose Estimation from Monocular Video**](http://arxiv.org/abs/2307.05853)
+
+[Bruce X.B. Yu](https://bruceyo.github.io/)<sup>1</sup>,
+[Zhang Zhi](https://github.com/tczhangzhi)<sup>1</sup>,
+[Liu Yongxu](https://scholar.google.com.hk/citations?user=QQwy-dkAAAAJ&hl=en&oi=sra)<sup>1</sup>,
+[Sheng-hua Zhong](https://sheng-hua-zhong.weebly.com/)<sup>2</sup>,
+[Yan Liu](https://www4.comp.polyu.edu.hk/~csyliu/)<sup>1</sup>,
+[Chang Wen Chen](https://chenlab.comp.polyu.edu.hk/)<sup>1</sup>\*
+
+<sup>1</sup>The Hong Kong Polytechnic University, <sup>2</sup>Shen Zhen University.
+
+<div align="center">
+    <img src="figures/architecture.png">
+</div>
 
 ## Introduction
 3D human pose estimation has been researched for decades with promising fruits. 3D human pose lifting is one of the promising research directions toward the task where both estimated pose and ground truth pose data are used for training. Existing pose lifting works mainly focus on improving the performance of estimated pose, but they usually underperform when testing on the ground truth pose data. We observe that the performance of the estimated pose can be easily improved by preparing good quality 2D pose, such as fine-tuning the 2D pose or using advanced 2D pose detectors. As such, we concentrate on improving the 3D human pose lifting via ground truth data for the future improvement of more quality estimated pose data.
 Towards this goal, a simple yet effective model called Global-local Adaptive Graph Convolutional Network (GLA-GCN) is proposed in this work. Our GLA-GCN globally models the spatiotemporal structure via a graph representation and backtraces local joint features for 3D human pose estimation via individually connected layers.
 We conduct extensive experiments on two benchmark datasets: Human3.6M and HumanEva-I, to validate our model design. Experimental results show that our GLA-GCN implemented with ground truth 2D poses significantly outperforms state-of-the-art methods (e.g., up to 3%, 17\%, and 9% error reductions on Human3.6M, HumanEva-I, and MPI-INF-3DHP, respectively). 
-
-<div align="center">
-    <img src="figures/architecture.png">
-</div>
 
 ## Visualization and Comparison with SOTA
 <div align="center">
@@ -112,9 +125,9 @@ Thanks to the original authors for their work!
 ## Citation
 If you find this work is helpful, please cite our work:
 ```
-@ARTICLE{9782511,
+@ARTICLE{yu2023glagcn,
   author={Yu, Bruce X.B. and Zhi, Zhang and Yongxu, Liu and Sheng-hua, Zhong and Yan, Liu and Chang Wen, Chen},
-  journal={arXiv}, 
+  journal={arXiv preprint arXiv:2307.05853},
   title={GLA-GCN: Global-local Adaptive Graph Convolutional Network for 3D Human Pose Estimation from Monocular Video}, 
   year={2023},
   volume={},
