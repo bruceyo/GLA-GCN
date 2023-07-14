@@ -3,7 +3,7 @@
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/gla-gcn-global-local-adaptive-graph/3d-human-pose-estimation-on-human36m)](https://paperswithcode.com/sota/3d-human-pose-estimation-on-human36m?p=gla-gcn-global-local-adaptive-graph)
 
 This repository holds the codebase, dataset, and models for the work:
-[**GLA-GCN: Global-local Adaptive Graph Convolutional Network for 3D Human Pose Estimation from Monocular Video**](http://arxiv.org/abs/2307.05853) ICCV 2023
+[**GLA-GCN: Global-local Adaptive Graph Convolutional Network for 3D Human Pose Estimation from Monocular Video**](http://arxiv.org/abs/2307.05853), ICCV 2023
 
 [Bruce X.B. Yu](https://bruceyo.github.io/)<sup>1</sup>,
 [Zhang Zhi](https://github.com/tczhangzhi)<sup>1</sup>,
