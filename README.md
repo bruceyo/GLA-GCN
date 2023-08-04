@@ -126,15 +126,14 @@ Thanks to the original authors for their work!
 ## Citation
 If you find this work is helpful, please cite our work:
 ```
-@ARTICLE{yu2023glagcn,
-  author={Yu, Bruce X.B. and Zhi, Zhang and Yongxu, Liu and Sheng-hua, Zhong and Yan, Liu and Chang Wen, Chen},
-  journal={arXiv preprint arXiv:2307.05853},
-  title={GLA-GCN: Global-local Adaptive Graph Convolutional Network for 3D Human Pose Estimation from Monocular Video}, 
-  year={2023},
-  volume={},
-  number={},
-  pages={1-1},
-  }
+@misc{yu2023glagcn,
+      title={GLA-GCN: Global-local Adaptive Graph Convolutional Network for 3D Human Pose Estimation from Monocular Video}, 
+      author={Bruce X. B. Yu and Zhi Zhang and Yongxu Liu and Sheng-hua Zhong and Yan Liu and Chang Wen Chen},
+      year={2023},
+      eprint={2307.05853},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
 ```
 
 ## Contact
