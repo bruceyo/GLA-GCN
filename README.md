@@ -4,7 +4,7 @@
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/gla-gcn-global-local-adaptive-graph/3d-human-pose-estimation-on-human36m)](https://paperswithcode.com/sota/3d-human-pose-estimation-on-human36m?p=gla-gcn-global-local-adaptive-graph)
 
 This repository holds the codebase, dataset, and models for the work:
-[**GLA-GCN: Global-local Adaptive Graph Convolutional Network for 3D Human Pose Estimation from Monocular Video**](http://arxiv.org/abs/2307.05853), ICCV 2023
+[**GLA-GCN: Global-local Adaptive Graph Convolutional Network for 3D Human Pose Estimation from Monocular Video**](https://openaccess.thecvf.com/content/ICCV2023/papers/Yu_GLA-GCN_Global-local_Adaptive_Graph_Convolutional_Network_for_3D_Human_Pose_ICCV_2023_paper.pdf), ICCV 2023
 
 [Bruce X.B. Yu](https://bruceyo.github.io/)<sup>1</sup>,
 [Zhang Zhi](https://github.com/tczhangzhi)<sup>1</sup>,
@@ -126,13 +126,13 @@ Thanks to the original authors for their work!
 ## Citation
 If you find this work is helpful, please cite our work:
 ```
-@misc{yu2023glagcn,
-      title={GLA-GCN: Global-local Adaptive Graph Convolutional Network for 3D Human Pose Estimation from Monocular Video}, 
-      author={Bruce X. B. Yu and Zhi Zhang and Yongxu Liu and Sheng-hua Zhong and Yan Liu and Chang Wen Chen},
-      year={2023},
-      eprint={2307.05853},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV}
+@InProceedings{Yu_2023_ICCV,
+    author    = {Yu, Bruce X.B. and Zhang, Zhi and Liu, Yongxu and Zhong, Sheng-hua and Liu, Yan and Chen, Chang Wen},
+    title     = {GLA-GCN: Global-local Adaptive Graph Convolutional Network for 3D Human Pose Estimation from Monocular Video},
+    booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
+    month     = {October},
+    year      = {2023},
+    pages     = {8818-8829}
 }
 ```
 
